@@ -126,7 +126,9 @@ Datastreams can be structurally related to an object in four different ways. The
 * Externally referenced content (abbreviated "E")
 * Redirect referenced content (abbreviated "R")
 
-Inline XML content is stored within an object's FOXML (more information on FOXML is provided below). Managed content is stored as files within Fedora (datastreams of this control group are the rough equivalent of attachments in our email analogy). These two types of datastreams are the most common in Islandora, but E and R datastreams can also be used. Externally referenced content is stored outside of Fedora and is identified within Fedora by a URL; when Fedora needs the datastream's content, it retrieves it from the URL. Redirect referenced content is also identified by a URL, but the datastream's content is never retrieved by Fedora; instead, it just redirects users to the URL.
+Inline XML content is stored within an object's FOXML (more information on FOXML is provided below). Managed content is stored as files within Fedora (datastreams of this control group are the rough equivalent of attachments in our email analogy). These two types of datastreams are the most common in Islandora, but E and R datastreams can also be used. 
+
+Externally referenced content is stored outside of Fedora and is identified within Fedora by a URL; when Fedora needs the datastream's content, it retrieves it from the URL and proxies the content to the user. Redirect referenced content is also identified by a URL, but the datastream's content is never retrieved by Fedora; instead, it just redirects users to the URL.
 
 The Islandora graphical user interface exposes a subset of an object's properties and datastreams to administrative users. To illustrate this, we will use the following basic image object:
 
